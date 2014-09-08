@@ -1,0 +1,18 @@
+{% load i18n %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% trans 'Facebook login proof-of-concept' %}</title>
+    <link href="{% static 'main/css/main.css' %}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="fb-root"></div>
+    <div class="social-connect">
+        <button class="facebook">{% trans 'Login with Facebook' %}</button>
+    </div>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static 'main/js/main.js' %}"></script>
+</body>
+</html>
