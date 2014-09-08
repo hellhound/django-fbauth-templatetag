@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fbauth demo</title>
+</head>
+<body>
+    <h1 id="id_access_token"></h1>
+    <script type="text/javascript">
+        function getParameterByName(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)'),
+                results = regex.exec(location.search);
+            return results == null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+        var h1 = document.getElementById('id_access_token');
+
+        h1.innerText = getParameterByName('access_token');
+    </script>
+</body>
+</html>

@@ -37,8 +37,8 @@ env/
 
 # Django-specific
 local_settings.py
-doccupations/media/!.ignoreme
-doccupations/static
+fbauth/media/!.turd
+fbauth/static
 #static/admin_tools
 *.pot
 
@@ -61,10 +61,10 @@ pip-log.txt
 .coverage
 .tox
 # Data
-fblogin/data/*
-fblogin/data/!.turd
-fblogin/media/*
-fblogin/media/!.turd
+fbauth/data/*
+fbauth/data/!.turd
+fbauth/media/*
+fbauth/media/!.turd
 #Redis
 *.rdb
 #Coverage byproducts
