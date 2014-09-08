@@ -10,6 +10,12 @@ Installation
 Just grab the Django app fbauth/apps/fbauth, put it into your apps directory and
 add it to your `INSTALLED_APPS`.
 
+Testing
+=======
+
+You can try out fbauth using the installed demo included in the project. Just
+run the `runserver` command to look at the demo.
+
 Instructions
 ============
 Load the `fbauth` template-tag library into your template, then call
