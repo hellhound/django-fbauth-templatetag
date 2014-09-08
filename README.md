@@ -51,3 +51,6 @@ setattr(settings, 'FBAUTH_REDIRECT_URL',
 
 Remember that your redirection URL should include the format token `{0}` to
 indicate where facebook's access token should be written.
+
+You can change the default language (`en-us`) to the locale `es-pe` using the
+`LANGUAGE_CODE` setting in your `settings` module.
