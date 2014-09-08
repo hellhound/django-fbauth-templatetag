@@ -47,7 +47,7 @@ take advantage of Django's `reverse` function.
 E.g.
 
 ```python
-# myapp/__init__.py
+# demo/__init__.py
 from django.core.urlresolvers import reverse
 from django.conf import settings
 
