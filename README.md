@@ -18,7 +18,7 @@ want the Facebook button to be rendered.
 
 E.g.
 
-```html
+```django
 {% load fbauth %}
 <!DOCTYPE html>
 <html lang="en">
