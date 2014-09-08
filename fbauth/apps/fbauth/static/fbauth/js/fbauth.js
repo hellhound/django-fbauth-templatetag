@@ -60,7 +60,9 @@ FBAuthFacade.prototype = {
                 self.onLogin(response);
             }
             else {
-                FB.login(self.onLogin, {scope: 'public_profile,email'});
+                FB.login(function(response) {
+                    self.onLogin(response)
+                }, {scope: 'public_profile,email'});
             }
         });
     },
