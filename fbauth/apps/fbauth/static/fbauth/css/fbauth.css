@@ -32,7 +32,7 @@
 
 .social-connect button.facebook:before {
   content: '';
-  background: url(../images/logo-fb.png) no-repeat 4px center;
+  background: url(../images/facebook-logo.png) no-repeat 4px center;
   border-right:1px solid #687fb5;
   display: block;
   width:32px;

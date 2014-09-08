@@ -41,7 +41,7 @@ INSTALLED_APPS = (
 )
 
 INSTALLED_APPS += (
-    'main',
+    'fbauth',
 )
 
 MIDDLEWARE_CLASSES = (
