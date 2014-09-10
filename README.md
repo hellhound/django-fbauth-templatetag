@@ -7,7 +7,7 @@ Requirements
 
 Installation
 ============
-pip install django-fbauth
+pip install django-fbauth-templatag
 
 Testing
 =======
