@@ -9,10 +9,10 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-fbauth-templatetag',
-    version='0.1',
+    version='0.2',
     packages=find_packages(exclude='demo'),
     license='BSD',
-    url='https://github.com/hellhound/django-fbauth',
+    url='https://github.com/hellhound/django-fbauth-templatetag',
     author='Jean-Pierre Chauvel',
     author_email='jchauvel@gmail',
     description='Django app that comes with a simple template tag to place a ' \

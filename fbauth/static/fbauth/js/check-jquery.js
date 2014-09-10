@@ -35,6 +35,8 @@ FBAuthCheckjQuery.prototype = {
 
         if (!(window.jQuery && checker.jqueryVersion 
                 < checker.jqueryRequiredVersion)) {
+            $ = undefined;
+            jQuery = undefined;
 
             var jqueryTag = document.createElement('script');
 

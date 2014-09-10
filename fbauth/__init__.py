@@ -5,7 +5,8 @@ __all__ = ['VERSION']
 
 try:
     import pkg_resources
-    VERSION = pkg_resources.get_distribution('django-fbauth').version
+    VERSION = pkg_resources.get_distribution(
+        'django-fbauth-templatetag').version
 except Exception:
     VERSION = 'unknown'
 
