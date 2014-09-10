@@ -31,14 +31,16 @@
 # Python-specific
 *.log
 *.py[co]
+dist/
+*.egg_info
 
 # Virtualenv-specific
 env/
 
 # Django-specific
 local_settings.py
-fbauth/media/!.turd
-fbauth/static
+demo/media/!.turd
+demo/static
 #static/admin_tools
 *.pot
 
@@ -61,10 +63,10 @@ pip-log.txt
 .coverage
 .tox
 # Data
-fbauth/data/*
-fbauth/data/!.turd
-fbauth/media/*
-fbauth/media/!.turd
+demo/data/*
+demo/data/!.turd
+demo/media/*
+demo/media/!.turd
 #Redis
 *.rdb
 #Coverage byproducts

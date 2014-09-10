@@ -7,8 +7,7 @@ Requirements
 
 Installation
 ============
-Just grab the Django app fbauth/apps/fbauth, put it into your apps directory and
-add it to your `INSTALLED_APPS`.
+pip install django-fbauth
 
 Testing
 =======
@@ -39,10 +38,18 @@ E.g.
 </html>
 ```
 
+Configure the `FBAUTH_FACEBOOK_APP_ID` variable in you `settings` module with
+you Facebook app ID.
+
 Configure the `FBAUTH_REDIRECT_URL` variable in your `settings` module with the
 url that should be receiving the access token from facebook. Sometimes it's more
 convinient to put it inside the `__init__` module of your app so that you can
 take advantage of Django's `reverse` function.
+
+There's also a `FBAUTH_FACEBOOK_LOCALEL` variable which you can use to specify
+an ISO-15897 (also know as POSIX locale) locale for the Facebook API. Users of
+your project will see the Facebook UI translated in the locale you specify. The
+default locale is `en_US`.
 
 E.g.
 
@@ -56,7 +63,4 @@ setattr(settings, 'FBAUTH_REDIRECT_URL',
 ```
 
 Remember that your redirection URL should include the format token `{0}` to
-indicate where facebook's access token should be written.
-
-You can change the default language (`en-us`) to the locale `es-pe` using the
-`LANGUAGE_CODE` setting in your `settings` module.
+indicate where Facebook's access token should be written.
